@@ -1,6 +1,6 @@
 # ANNOUNCEMENT: the 19-JUN-2018 lecture/talk is canceled
 
-My talk on 19-JUN-2018 is canceled for [conducting the building safety confirmation of Osaka University campuses due to the possible damages of the 18-JUN-2018 earthquake.](http://www.osaka-u.ac.jp/en/news/topics/2018/06/20180618_03)
+My talk on 19-JUN-2018 is canceled for [conducting the building safety confirmation of Osaka University campuses due to the possible damages caused by the 18-JUN-2018 earthquake.](http://www.osaka-u.ac.jp/en/news/topics/2018/06/20180618_03)
 
 2018年6月19日火曜日の講義は、[大阪大学より「全ての授業を終日休講とする」旨Webページに掲示が出ておりますので、休講とします。](http://www.osaka-u.ac.jp/ja/news/topics/2018/06/20180618_03)
 
