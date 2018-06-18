@@ -1,8 +1,14 @@
+# ANNOUNCEMENT: the 19-JUN-2018 lecture/talk is canceled
+
+My talk on 19-JUN-2018 is canceled for [conducting the building safety confirmation of Osaka University campuses caused by the 18-JUN-2018 earthquake.](http://www.osaka-u.ac.jp/en/news/topics/2018/06/20180618_03)
+
+2018年6月19日火曜日の講義は、[大阪大学より「全ての授業を終日休講とする」旨Webページに掲示が出ておりますので、休講とします。](http://www.osaka-u.ac.jp/ja/news/topics/2018/06/20180618_03)
+
 # README for the lecture/talk series at Osaka University, June 2018
 
 * 大阪大学 基礎工学部 電気工学特別講義 2018年度
 * Kenji Rikitake / 力武 健次
-* Latest revision: 25-MAR-2018
+* Latest revision: 18-JUN-2018
 
 ## Talk style
 
