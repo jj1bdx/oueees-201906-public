@@ -2,16 +2,16 @@ theme: Next, 8
 footer: Kenji Rikitake / oueees 201806 intro
 slidenumbers: true
 
-# [fit]  電気工学特別講義
-# [fit] 2018年6月19日/26日、7月3日
+# [fit]  電気工学特別講義 2018年
+# [fit] 6月26日、7月3日、7月17日
 # [fit] イントロダクション
 
 <!-- Use Deckset 2.0, Next theme, 4:3 aspect ratio -->
 
 ---
 
-# [fit] OU EE ES Lecture Series
-# [fit] June 19/26 and July 3, 2018
+# [fit] OU EE ES Lecture Series 2018
+# [fit] June 26 / July 3 / July 17
 # [fit] Lecture introduction
 
 ---
@@ -22,7 +22,7 @@ slidenumbers: true
 
 ## 力武 健次
 
-19-JUN-2018
+26-JUN-2018
 School of Engineering Science
 Osaka University
 Toyonaka, Osaka, Japan
