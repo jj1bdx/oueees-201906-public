@@ -102,9 +102,7 @@ There are many ways to connect the dots in this picture
 
 ---
 
-# Multiplexing
-
-Sharing the same link by multiple nodes and communication devices
+# Multiplexing: sharing the same link by multiple nodes and communication devices
 
 ---
 
@@ -116,15 +114,131 @@ Sharing the same link by multiple nodes and communication devices
 
 ---
 
+# How to multiplex different types of information, and put them together for sharing a same medium?
+
+---
+
+# Signal characteristics used for multiplexing
+
+* Space division (multiple lines or multiple beam-formed antennas)
+* Time division
+* Frequency/wavelength division
+* Polarization division
+* Code division (multiple codes of very small cross-correlation)
+
+---
+
+# Packet switching
+
+What if you can split a stream into the *packets* and let them be delivered through *different links* for each packet?
+
+---
+
+# How to form a packet (1/2)
+
+* Split a stream into multiple pieces of data
+
+```
+ABCDEFHIJ -> ABC DEF HIJ
+```
+
+* Put a header on each piece
+
+```
+ABC DEF HIJ -> P1-ABC P2-DEF P3-HIJ
+```
+
+---
+
+# How to form a packet (2/2)
+
+* Add source and destination addresses to each packet
+
+```
+P1-ABC P2-DEF P3-HIJ
+ ->  FromXtoY-P1-ABC
+     FromXtoY-P2-DEF
+     FromXtoY-P3-HIJ
+```
+
+* Then send them on the network!
+
+---
+
+<!-- animated gif -->
+[.background-color: #FFFFFF]
+![fit](Packet_Switching.gif)
+
+---
+
+# Packet switching and the nodes
+
+* Each communication node must know how to assemble/disassemble information to/from the packets
+* Each communication node must know which link should be used to send a packet for the given destination
+* Packets can be lost; relaying nodes cannot detect a lost packet
+
+---
+
+# Packet (dis)assembly issues
+
+* The sequence of delivered packets may differ from that of the sender intents; holding the out-of-sequence packets are required
+* Retransmission is required to recover a lost packet for a reliable communication
+
+---
+
+[.background-color: #FFFFFF]
+![fit](internet-packetswitching.jpg)
+
+---
+
+# Packet switching enables
+
+* Changing the packet relay routes *during* the communication
+* Using multiple routes for a single communication link
+* Aggregating multiple communication links into a physical link
+* Connectionless *and* connection-oriented communication simultaneously
+
+---
+
+![right fit](network-distributed.png)
+
+# Truly distributed networks are feasible by packet switching
+
+* No centralized nodes
+* Each link can be utilized by all nodes
+* A disconnection of the link will not be fatal so long as one link is connected to a node
+
+---
+
+# Disadvantages of packet switching
+
+* Each node must be able to form/generate and decode/interpret a packet
+* Forming and decoding a packet takes time and the computing resources
+* Reliability and latency can be a trade-off
+* Relay nodes can be neutralized by denial-of-service attacks
+* Difficult to manage
+
+---
+
+# Topics on next talk
+
+* IP addresses
+* Routing and the information dissemination
+* Transport protocols (TCP, UDP, HTTP(/2), QUIC)
+
+---
+
 # Photo credits
 
 * All photos are modified and edited by Kenji Rikitake
 * Photos are from Unsplash.com unless otherwise noted
 
 * Title: [Shane Rounce](https://unsplash.com/photos/1ZZ96uESRJQ)
-* Stockholm telephone tower: [Tekniska museet](https://www.flickr.com/photos/tekniskamuseet/6838150900/in/album-72157629589461917/), from Flickr, CC-BY-2.0
-* Jönköping telephone lines: [Tekniska museet](https://www.flickr.com/photos/tekniskamuseet/6978810049/in/album-72157629575713829/), from Flickr, CC-BY-2.0
-* Tekniska museet photo: Kenji Rikitake, CC-BY-2.0
+* Stockholm telephone tower: [Tekniska museet](https://www.flickr.com/photos/tekniskamuseet/6838150900/in/album-72157629589461917/), from Flickr, CC BY 2.0
+* Jönköping telephone lines: [Tekniska museet](https://www.flickr.com/photos/tekniskamuseet/6978810049/in/album-72157629575713829/), from Flickr, CC BY 2.0
+* Tekniska museet photo: Kenji Rikitake, CC BY 4.0
+* Packet Switching animated GIF: [By Oddbodz from Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/f6/Packet_Switching.gif), CC BY-SA 3.0
+* Internet packet switching: [By Computer-blue.svg: OpenClipartderivative work: Pluke (Computer-blue.svg)](https://upload.wikimedia.org/wikipedia/commons/c/c0/CPT-internet-packetswitching.svg), via Wikimedia Commons, CC0 (Public Domain)
 
 <!--
 Local Variables:
