@@ -2,7 +2,7 @@
 
 * 大阪大学 基礎工学部 電気工学特別講義 2018年度
 * Kenji Rikitake / 力武 健次
-* Latest revision: 25-JUN-2018
+* Latest revision: 2-JUL-2018
 
 ## Talk style
 
@@ -21,7 +21,7 @@
 * Multiplexing and aggregation
 * Synchronization in the asynchronous world
 
-## 3-JUL-2018: Routing and connection / ルーティングとコネクション
+## 3-JUL-2018: Routing and transport protocol / ルーティングとトランスポートプロトコル
 
 * IP address and the hierarchical routing
 * Routing information dissemination protocols (RIP, OSPF, BGP)
