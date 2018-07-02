@@ -167,6 +167,196 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 ---
 
+# Routing
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing.jpg)
+
+---
+
+# Static routing
+
+- Set the default route for nodes which are not directly reachable
+- Works well on simple networks or star networks
+- Static routing may cause *ping-pong*
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing-static.jpg)
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing-static-failed.jpg)
+
+---
+
+# Dynamic routing
+
+- Hop count: count the hops between nodes
+- Link cost: determined by the speed and quality
+- Administrative policies
+
+---
+
+# Simple hop counting
+
+- Assume every link costs the same with each other
+
+---
+
+[.background-color: #FFFFFF]
+
+![original fit](routing-cost1.jpg)
+
+
+---
+
+# Evaluating link cost
+
+- What if the cost of each link varies?
+- If two or more paths have the equal cost, all of the links will be utilized for load balancing
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing-cost2.jpg)
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing-cost2-multipath.jpg)
+
+---
+
+# Simulating link failures
+
+- What if the link suddenly degrades or is disconnected?
+- Largely increasing the cost of degraded or disconnected links will give an easy solution
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing-cost3.jpg)
+
+---
+
+# Administrative policies
+
+* For many reasons, you don't want to accept packets from some nodes, depending on the relay paths
+* For example: passing C is OK, but passing E is not: A-B-C-G and A-B-C-F-G are OK, but A-D-E-F-G is blocked
+* Common among interconnection of the autonomous systems (internet serpice providers and organizations)
+
+---
+[.background-color: #FFFFFF]
+
+![original fit](routing-cost2-policy.jpg)
+
+---
+
+# Routing information dissemination protocols
+
+* Link-state protocol: flooding link cost information of each node throughout the network
+* Path vector protocol: exchanging path of nodes for each network instead of the link costs
+* Highly vulnerable to external attacks
+
+---
+
+# Routing aggregation
+
+- The following four networks
+  * 192.168.100.0/24
+  * 192.168.101.0/24
+  * 192.168.102.0/24
+  * 192.168.103.0/24
+- -> aggregated as 192.168.100.0/22
+- 4 networks together as one aggregated network
+
+---
+
+# Network transports
+
+---
+
+# IP address and the port number
+
+* Each service has a 16-bit port number
+* HTTPS = 443, DNS = 53, SSH = 22, etc.
+* A pair of IP address and port number defines an endpoint of communication
+
+---
+
+# UDP and TCP
+
+* Two major transport protocols on the internet
+* User Datagram Protocol (UDP): connection-less
+* Transport Control Protocol (TCP): connection-oriented
+
+---
+
+# Packet exchange limitation
+
+* Packets are not always delivered
+* Sending sequence is not preserved
+* The same packet may be received multiple times
+* The content of the packet may get altered or damaged
+* Packet size has the limitation
+
+---
+
+# What UDP does
+
+* Add a header with the port number
+* Send it in an IP packet
+* ... and that's it
+
+---
+
+# UDP's pros and cons
+
+* UDP datagrams are still not always delivered and may get lost
+* Sequence is not preserved
+* The same datagram may be received multiple times and may cause duplicate delivery
+* The errors in the contents of UDP datagrams are detectable
+* UDP datagram has the size limit: suitable for relatively small messages
+* Very small additional latency
+
+---
+
+# Transport control protocol (TCP)
+
+* Detect packet loss by timeout
+* Split stream into segments
+* Put sequence numbers to the segments
+* Reassemble segments to the stream
+* Perform congestion control
+
+---
+
+# TCP's pros and cons
+
+* Loss is detected and recovered so long as the connection is alive
+* Sequence is preserved
+* No content repetition
+* Errors are detected and fixed by retransmission
+* The stream will accept data so long as the connection is alive
+* Data delivery may delay if retransmission occurs
+
+---
+
+# Web: HTTP/2 (TCP) .vs. QUIC (UDP)
+
+* People wants *speed*
+* HTTP/2: stream aggregation and content compression
+* HTTP/2 is still bound by TCP
+* QUIC: tightly integrated to HTTP/2 and specific congestion control
+* Google is migrating to HTTP/2 + QUIC
+
+---
+
 # Topics on next talk
 
 * Cloud computing .vs. endpoint computing
@@ -178,14 +368,8 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 # Photo credits
 
 * All photos are modified and edited by Kenji Rikitake
-* Photos are from Unsplash.com unless otherwise noted
-
-* Title: [Denis Nevozhai](https://unsplash.com/photos/_QoAuZGAoPY)
-* Stockholm telephone tower: [Tekniska museet](https://www.flickr.com/photos/tekniskamuseet/6838150900/in/album-72157629589461917/), from Flickr, CC BY 2.0
-* Jönköping telephone lines: [Tekniska museet](https://www.flickr.com/photos/tekniskamuseet/6978810049/in/album-72157629575713829/), from Flickr, CC BY 2.0
-* Tekniska museet photo: Kenji Rikitake, CC BY 4.0
-* Packet Switching animated GIF: [By Oddbodz from Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/f/f6/Packet_Switching.gif), CC BY-SA 3.0
-* Internet packet switching: [By Computer-blue.svg: OpenClipartderivative work: Pluke (Computer-blue.svg)](https://upload.wikimedia.org/wikipedia/commons/c/c0/CPT-internet-packetswitching.svg), via Wikimedia Commons, CC0 (Public Domain)
+* Title: [Denis Nevozhai](https://unsplash.com/photos/_QoAuZGAoPY) via Unsplash
+* Unicast/broadcast/multicast/anycast diagrams: [By Easyas12c~commonswiki / Perhelion](https://en.wikipedia.org/wiki/Routing#/media/File:Cast.svg), via Wikimedia Commons, CC0 (Public Domain)
 
 <!--
 Local Variables:
