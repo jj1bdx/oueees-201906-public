@@ -75,9 +75,116 @@ A physical server is separated into multiple virtual machines
 
 ---
 
+# Cloud computing: centralization
+
+---
+
+# An example of cloud computing: Internet of Things (IoT) and telemetering
+
+---
+
+[.background-color: #ffffff]
+
+![original fit](telemetering.jpg)
+
+---
+
+# Telemetering
+
+* Mostly unidirectional (not really *the true and genuine internet*)
+* Sensors/devices gathering data through internet and feed them to the servers in the cloud computing platforms
+* *The servers compute*
+* *Extremely centralized*
+
+---
+
+# Cloud computing: social implication
+
+---
+
+## Centralized social behavior accerelated by cloud computing
+
+* Sharing *everything* - no privacy
+* *Panopticon* [^1] style of governance, filtering, *censorship, or autocracy*
+* Complete *externalization* of resources, leading to *no personal control*
+
+[^1]: n. a circular prison with cells arranged around a central well, from which prisoners could at all times be observed. (New Oxford American Dictionary, Apple macOS 10.13.6)
+
+---
+
+# Presidio Modelo: a panopticon prison
+
+![inline fit](Presidio_Modelo.jpg)
+
+---
+
+[.background-color: #ffffff]
+
+![fit](Panopticon.jpg)
+![fit](Contrasted_Residences_for_the_Poor.jpg)
+
+---
+
+# INGSOC: the slogans [^2]
+
+* War is peace
+* Freedom is slavery
+* Ignorance is strength
+
+* Independent thinking = *thoughtcrime*
+
+## NOTE: this is a *fiction*!
+
+[^2]: George Orwell, "Nineteen Eighty-Four", 1949.
+
+---
+
+# Why cloud computing has become so *dystopian*? -- because we have sold freedom for *convenience*
+
+* Ubiquitous/global accessibility
+* Concentrated data for easy analysis
+* Easy control of the information flow
+* No extra cost for sharing
+* No need to think about where the information locates
+
+---
+
+# The inconvenient truth of centralized systems: what if the core/cloud fails?
+
+![right](When-core-fails.png)
+
+---
+
+## Inconvenience of centralized systems
+
+* Ubiquity or *no accessibility*
+* When the core fails, no alternative
+* When the core loses data, *no backup*
+* The system performance is restricted by the capability of the core
+* Endpoint systems will lost *all capabilities*
+
+---
+
+# Centralized systems are *not* sustainable
+
+- ...then how cloud computing systems manages the sustainability?
+
+---
+
+# Distributed systems provide sustainability and resilience against failures
+
+---
+
 ![original](irina-blok-15361-slide.jpg)
 
 # Networks
+
+---
+
+[.background-color: #ffffff]
+
+![fit](network-centralized.png)
+![fit](network-distributed.png)
 
 ---
 
@@ -94,12 +201,111 @@ A physical server is separated into multiple virtual machines
 
 ![fit](netsplit.jpg)
 
-# Partition tolerance: distributed systems should not stop working even if netsplit occurs
-
+# Partition/fault tolerance: distributed systems should not stop working even if netsplit occurs
 
 ---
 
-# Appendix: on choosing your career and professionality
+# Real-world challenges
+
+* Natural disasters
+* Device failures
+* Human operation errors
+* Political impediments
+* Social resentments
+
+---
+
+# Handling *failures*
+
+* Redundancy: keeping backup units ready
+* Fault tolerance: keeping systems running even the components fail
+* Resilience by failing fast: early detection of failures and invocation of the recovery procedu
+res
+
+---
+
+# Why fault tolerance?
+
+* Hard disk MTBF ~= 1 million hours
+* 1000 hard disks running 24 hours x 365 days = 8.76 million  hours
+* If you're running a system with 1000 hard disks, **9 out of 1000** will fail in a year
+* Recovery of a disk content takes often *a day*; you can't stop a system for *a day*, can you?
+
+---
+
+# Requirement to keep the systems fault tolerant
+
+* Redundancy: two or more resources for each unit of processing
+* Supervising the failure of the units by an independent supervisor
+* Rollback capability: undo the incomplete operations and retry
+
+---
+
+# Consistency issues of distributed systems
+
+* Locking/synchronization: waiting all data to be ready to compute or proceed to next step
+* Choosing the *right* data: which data is *correct*?
+* Supervision: fault detection and restarting
+
+---
+[.background-color: #ffffff]
+
+![original fit](locking.jpg)
+
+---
+[.background-color: #ffffff]
+
+![original fit](supervision.jpg)
+
+---
+
+# Eight Fallacies of Distributed Computing[^3] (1/2)
+
+* **The network is reliable**
+* **Latency is zero**
+* **Bandwidth is infinite**
+* The network is secure
+
+[^3]: <https://blog.fogcreek.com/eight-fallacies-of-distributed-computing-tech-talk/>
+
+---
+
+# Eight Fallacies of Distributed Computing (2/2)
+
+* Topology doesn't change
+* There is one administrator
+* Transport cost is zero
+* The network is homogeneous
+
+---
+
+# Summary: centralized computing is fragile; distributed computing is fault tolerant but hard
+
+---
+
+# Appendix 1: references for further study
+
+---
+
+![right fit](kiso-tcpip.jpg)
+
+# 基礎からわかるTCP/IPネットワークコンピューティング入門 第3版
+
+- オーム社 ISBN 9784274050732
+- [達人出版会の電子書籍](https://tatsu-zine.com/books/kiso-tcpip-nwcp3)
+
+---
+
+![right fit](ao-ipv6-book.jpg)
+
+# プロフェッショナルIPv6
+
+- [ラムダノートの紙の本+電子書籍](https://www.lambdanote.com/products/ipv6)
+- [Boothの無料版](https://professionalipv6.booth.pm/items/913273)
+
+---
+
+# Appendix 2: on choosing your career and professionality
 
 ---
 
@@ -142,6 +348,9 @@ A physical server is separated into multiple virtual machines
 * Cloud Computing: <https://commons.wikimedia.org/wiki/File:Cloud_applications_SVG.svg>, licensed under [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 * Intertwined network of computers: <https://en.wikipedia.org/wiki/File:Cloud_Computing.jpg>, licensed under [Creative Commons CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 * Web services are clusters of computers: Kenji Rikitake, at Kyoto University ACCMS, April 2017
+* Presidio Modelo Prison: By Friman [Public domain], from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Presidio_Modelo.JPG)
+* Panopticon: Jeremy Bentham, Public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Panopticon.jpg)
+* Contrasted Residences for The Poor: By Augustus Pugin [Public domain], via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Contrasted_Residences_for_the_Poor.jpg)
 * Networks: Irina Blok
 * Networks Split: Pietro De Grandi
 * Netsplit: <https://commons.wikimedia.org/wiki/File:Netsplit_split.svg>, in public domain
