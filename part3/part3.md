@@ -118,6 +118,8 @@ A physical server is separated into multiple virtual machines
 * Explore the computer skills
 * Do something unpopular
 
+# [fit] Go abroad
+
 ---
 
 # What are the most important things to pursue engineering/scientist career?
@@ -125,6 +127,8 @@ A physical server is separated into multiple virtual machines
 * Physical strength
 * Mental strength
 * Curiosity
+
+# [fit] Curiosity matters
 
 ---
 
