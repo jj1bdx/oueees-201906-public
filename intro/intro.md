@@ -1,9 +1,9 @@
-theme: Next, 8
-footer: Kenji Rikitake / oueees 201806 intro
+theme: Plain Jane, 2
+footer: Kenji Rikitake / oueees 201906 intro
 slidenumbers: true
 
-# [fit]  電気工学特別講義 2018年
-# [fit] 6月26日、7月3日、7月17日
+# [fit] 電気工学特別講義 2019年
+# [fit] 6月11/18/25日
 # [fit] イントロダクション
 
 <!-- Use Deckset 2.0, Next theme, 4:3 aspect ratio -->
@@ -11,7 +11,7 @@ slidenumbers: true
 ---
 
 # [fit] OU EE ES Lecture Series 2018
-# [fit] June 26 / July 3 / July 17
+# [fit] June 11/18/25
 # [fit] Lecture introduction
 
 ---
@@ -22,7 +22,7 @@ slidenumbers: true
 
 ## 力武 健次
 
-26-JUN-2018
+11-JUN-2018
 School of Engineering Science
 Osaka University
 Toyonaka, Osaka, Japan
@@ -32,19 +32,15 @@ Toyonaka, Osaka, Japan
 
 ---
 
-# [fit] QUAKE
+# [fit] Do you remember the quake?
 # [fit] 18-JUN-2018 0758JST
-# [fit] Direct hit!
-
----
-
-# [fit] Were you safe?
-# [fit] I hope you were!
+# [fit] ... and many other quakes?
 
 ---
 
 # [fit] Safety first
 # [fit] Stay alive
+# [fit] Don't be a slave
 
 ---
 
@@ -59,9 +55,9 @@ Toyonaka, Osaka, Japan
 
 ---
 
-# [fit] 技術士
-#（情報工学部門）
+# [fit] 技術士（情報工学部門）
 # [fit] 力武健次技術士事務所 所長
+# 情報処理安全確保支援士
 
 ---
 
@@ -77,18 +73,17 @@ Toyonaka, Osaka, Japan
 
 # My career
 
-Working on: Erlang, Elixir, C, FreeBSD, TCP/IP, PHP, mruby, C++, C#, Visual Studio, Moodle, macOS, Windows, Vim, Emacs, Arduino, AVR, radio, music, distributed systems, fault tolerance, whatever.
+Erlang, Elixir, C, FreeBSD, Linux, TCP/IP, PHP, mruby, Lua, C++, C#, Visual Studio, Moodle, macOS, Windows, Vim, Emacs, Arduino, AVR, radio, music, distributed systems, fault tolerance, whatever.
 
-28 years in Computer Science, 13 years since PhD, 42 years of ham radio op as @jj1bdx, 2010-2012: Professor, ACCMS/IIMC, Kyoto University, whatever.
-
----
-
-## ... Those past records are completely meaningless unless *you are working on what you really want to do right now*.
+29 years in Computer Science, 14 years since PhD, 43 years of ham radio op as @jj1bdx, 2010-2012: Professor, ACCMS/IIMC, Kyoto University, whatever.
 
 ---
 
-# [fit] Ignore past
-# [fit] achievements
+## Past records are meaningless unless *you work on what you really want to do now*.
+
+---
+
+# [fit] Ignore past achievements
 # [fit] Focus on *now*
 
 ---
@@ -119,19 +114,19 @@ Working on: Erlang, Elixir, C, FreeBSD, TCP/IP, PHP, mruby, C++, C#, Visual Stud
 
 ---
 
-# [fit] Technology 1:
+# Technology 1:
 
 # Packet switching
 
 ---
 
-# [fit] Technology 2:
+# Technology 2:
 
 # Flexible packet routing
 
 ---
 
-# [fit] Technology 3:
+# Technology 3:
 
 # Centralization
 # and
@@ -139,11 +134,11 @@ Working on: Erlang, Elixir, C, FreeBSD, TCP/IP, PHP, mruby, C++, C#, Visual Stud
 
 ---
 
-# [fit] Summary:
+# Summary:
 
-# [fit] Put in packets
-# [fit] Route flexibly
-# [fit] Decentralize
+# [fit] Divide data into packets
+# [fit] Route flexibly and wisely
+# [fit] Decentralize and distribute
 
 ---
 
