@@ -1,11 +1,11 @@
-theme: Zurich, 1
-footer: Kenji Rikitake / oueees 201806 part 1 26-JUN-2018
+theme: Plain Jane, 2
+footer: Kenji Rikitake / oueees 201906 part 1 11-JUN-2019
 slidenumbers: true
 autoscale: true
 
 ![](shane-rounce-229914-unsplash.jpg)
 
-# oueees-201806 talks Part 1/3: Packet Switching
+# oueees-201906 talks Part 1/3: Packet Switching
 
 <!-- Use Deckset 2.0, 4:3 aspect ratio -->
 
@@ -13,20 +13,20 @@ autoscale: true
 
 # Kenji Rikitake
 
-26-JUN-2018
+11-JUN-2019
 School of Engineering Science
 Osaka University
 Toyonaka, Osaka, Japan
 @jj1bdx
 
-Copyright ©2018 Kenji Rikitake.
+Copyright ©2018-2019 Kenji Rikitake.
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
 # Lecture notes
 
-* <https://github.com/jj1bdx/oueees-201806-public/>
+* <https://github.com/jj1bdx/oueees-201906-public/>
 * Check out the README.md file and the issues!
 
 ---
@@ -38,7 +38,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 ---
 
-# Before starting the today's talk: the risk of being a professional and exposure to the public
+# Preamble: the risk of being a professional and exposure to the public
 
 * You might be harassed, harmed, and attacked at any time
 * The attackers are *anonymous* while you are *well-identified*
@@ -96,7 +96,8 @@ There are many ways to connect the dots in this picture
 
 ![original](kenji_tekniskamuseet.jpg)
 
-# Tekniska museet in Stockholm (June 2018)
+# Tekniska museet in Stockholm 
+## (June 2018)
 
 ` `
 
