@@ -1,11 +1,11 @@
-theme: Zurich, 1
-footer: Kenji Rikitake / oueees 201806 part 2 3-JUL-2018
+theme: Plain Jane, 2
+footer: Kenji Rikitake / oueees 201906 part 2 18-JUN-2019
 slidenumbers: true
 autoscale: true
 
-![original](denys-nevozhai-154974-unsplash.jpg)
+![](denys-nevozhai-154974-unsplash.jpg)
 
-# oueees-201806 talks Part 2/3:Routing and transport protocols
+# oueees-201906 talks Part 2/3:Routing and transport protocols
 
 <!-- Use Deckset 2.0, 4:3 aspect ratio -->
 
@@ -13,20 +13,20 @@ autoscale: true
 
 # Kenji Rikitake
 
-3-JUL-2018
+18-JUN-2019
 School of Engineering Science
 Osaka University
 Toyonaka, Osaka, Japan
 @jj1bdx
 
-Copyright ©2018 Kenji Rikitake.
+Copyright ©2018-2019 Kenji Rikitake.
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 ---
 
 # Lecture notes
 
-* <https://github.com/jj1bdx/oueees-201806-public/>
+* <https://github.com/jj1bdx/oueees-201906-public/>
 * Check out the README.md file and the issues!
 
 ---
