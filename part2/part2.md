@@ -138,19 +138,19 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 ---
 
 # [fit] IPv6 addresses: 128 bits
-# [fit] 2404:6800:400a:80c::2004
-# [fit] = 2404:6800:400a:080c:0000:0000:0000:2004
+# [fit] 2404:6800:400a:808::2004
+# [fit] = 2404:6800:400a:0808:0000:0000:0000:2004
 
-* www.google.com as of 2-JUL-2018 0905UTC
+* www.google.com as of 17-JUN-2019 0505UTC
 * :xxxx: = up to 4 hex digits
 * :: = arbitrary number of 0, appearing only once in an address
 
 ---
 
 # [fit] IPv6 addresses with netmask
-# [fit] 2404:6800:400a:80c::2004/64
+# [fit] 2404:6800:400a:808::2004/64
 
-* Network: 2404:6800:400a:80c::/64
+* Network: 2404:6800:400a:808::/64
 * Host number: 0x0000000000002004
 * Host number: 64 bits (0: network)
 * Broadcast -> multicast addresses
@@ -248,7 +248,7 @@ This work is licensed under a [Creative Commons Attribution 4.0 International Li
 
 * For many reasons, you don't want to accept packets from some nodes, depending on the relay paths
 * For example: passing C is OK, but passing E is not: A-B-C-G and A-B-C-F-G are OK, but A-D-E-F-G is blocked
-* Common among interconnection of the autonomous systems (internet serpice providers and organizations)
+* Common among interconnection of the autonomous systems (internet service providers and organizations)
 
 ---
 [.background-color: #FFFFFF]
