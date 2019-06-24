@@ -219,8 +219,7 @@ A physical server is separated into multiple virtual machines
 
 * Redundancy: keeping backup units ready
 * Fault tolerance: keeping systems running even the components fail
-* Resilience by failing fast: early detection of failures and invocation of the recovery procedu
-res
+* Resilience by failing fast: early detection of failures and invocation of the recovery procedures
 
 ---
 
